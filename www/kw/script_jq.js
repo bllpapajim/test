@@ -16,6 +16,7 @@
         }
 
         $("#driver").click(function(event){
+			alert(1);
             var uname = $("#uname").val();
             var password = $("#password").val();
             var cpassword = $("#cpassword").val();
@@ -25,6 +26,7 @@
 
 
         $("#driver2").click(function(event){
+			alert(2);
             var passwd = $("#passwd").val();
             var username = $("#username").val();
             window.localStorage.setItem('user', username);
