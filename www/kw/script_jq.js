@@ -26,13 +26,15 @@
 
 
         $("#driver2").click(function(event){
-			alert(2);
             var passwd = $("#passwd").val();
             var username = $("#username").val();
             window.localStorage.setItem('user', username);
             window.localStorage.setItem('passwd', passwd);
             var mobile = 1;
+			alert(passwd);
+			alert(username);
             $("#stage2").load('https://kapaweb.gr/controlpanel/login-exec.php', {"passwd":passwd,"username":escape(username),"mobile":mobile} );
+			alert(3);
         });
         var passwd = $("#passwd").val();
         var uname = $("#username").val();
