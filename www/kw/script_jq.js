@@ -16,24 +16,24 @@
         }
 
         $("#driver").click(function(event){
-			alert(1);
+			$("#driver").css("display","none");
             var uname = $("#uname").val();
             var password = $("#password").val();
             var cpassword = $("#cpassword").val();
             var mobile = 1;
             $("#stage").load('https://kapaweb.gr/controlpanel/login-exec.php', {"password":password,"cpassword":cpassword,"uname":uname, "mobile":mobile} );
+			$("#driver").css("display","none");
         });
 
 
         $("#driver2").click(function(event){
-			$("#driver2").css("display","none");
+			$("#driver2").css("display","block");
             var passwd = $("#passwd").val();
             var username = $("#username").val();
             window.localStorage.setItem('user', username);
             window.localStorage.setItem('passwd', passwd);
             var mobile = 1;
             $("#stage2").load('https://kapaweb.gr/controlpanel/login-exec.php', {"passwd":passwd,"username":escape(username),"mobile":mobile} );
-			alert(3);
 			$("#driver2").css("display","block");
         });
         var passwd = $("#passwd").val();
