@@ -27,14 +27,14 @@
 
 
         $("#driver2").click(function(event){
-			$("#driver2").css("display","block");
+			$("#driver2").fadeToggle();
             var passwd = $("#passwd").val();
             var username = $("#username").val();
             window.localStorage.setItem('user', username);
             window.localStorage.setItem('passwd', passwd);
             var mobile = 1;
             $("#stage2").load('https://kapaweb.gr/controlpanel/login-exec.php', {"passwd":passwd,"username":escape(username),"mobile":mobile} );
-			$("#driver2").css("display","block");
+			$("#driver2").fadeToggle();
         });
         var passwd = $("#passwd").val();
         var uname = $("#username").val();
