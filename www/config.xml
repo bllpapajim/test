@@ -2,9 +2,9 @@
 <widget id="gr.kapaweb.kapaweb" version="1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Kapaweb</name>
     <description>
-        Kapaweb app.
+        Kapaweb app - Domain name and Hosting managment
     </description>
-    <author email="info@kapaweb.gr" href="http://kapaweb.gr">
+    <author email="info@kapaweb.gr" href="https://kapaweb.gr">
         KapaWeb
     </author>
     <content src="index.html" />
