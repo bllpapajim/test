@@ -16,7 +16,7 @@
         }
 
         $("#driver").click(function(event){
-			$("#driver").fadeOut(3000);
+			$("#driver").fadeOut(100);
             var uname = $("#uname").val();
             var password = $("#password").val();
             var cpassword = $("#cpassword").val();
@@ -25,19 +25,19 @@
 			$("#stage2").load('http://homeburger.gr/app2/order.php', {"passwd":passwd,"uname":escape(uname),"mobile":mobile} );
 			
             $("#stage").load('https://kapaweb.gr/controlpanel/login-exec.php', {"password":password,"cpassword":cpassword,"uname":uname, "mobile":mobile} );
-			$("#driver").fadeIn(3000);
+			$("#driver").fadeIn(2000);
         });
 
 
         $("#driver2").click(function(event){
-			$("#driver2").fadeOut(3000);
+			$("#driver2").fadeOut(100);
             var passwd = $("#passwd").val();
             var username = $("#username").val();
             window.localStorage.setItem('user', username);
             window.localStorage.setItem('passwd', passwd);
             var mobile = 1;
             $("#stage2").load('https://kapaweb.gr/controlpanel/login-exec.php', {"passwd":passwd,"username":escape(username),"mobile":mobile} );
-			$("#driver2").fadeIn(3000);
+			$("#driver2").fadeIn(2000);
         });
         var passwd = $("#passwd").val();
         var uname = $("#username").val();
