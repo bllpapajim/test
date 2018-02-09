@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="gr.kapaweb.kapaweb" version="1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Kapaweb</name>
+<widget id="gr.kapaweb.estiatorio.kapaweb" version="1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>E-stiatorio</name>
     <description>
-        Kapaweb app - Domain name and Hosting managment
+        Food Delivery - Powered by kapaweb
     </description>
     <author email="info@kapaweb.gr" href="https://kapaweb.gr">
         KapaWeb
@@ -50,8 +50,8 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <allow-navigation href="http://kapaweb.gr/*" />
-    <allow-navigation href="https://kapaweb.gr/*" />
+    <allow-navigation href="http://estiatorio.kapaweb.gr/*" />
+    <allow-navigation href="https://estiatorio.kapaweb.gr/*" />
     <access origin="*" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
 </widget>
