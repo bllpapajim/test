@@ -189,6 +189,19 @@ particleground(document.getElementById('particles-background'), {
   particleRadius: 2, // Dot size
 });
 </script>
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA-8aHdSLJI0aj7PIpWXFIp7q8m1s1JYGo",
+    authDomain: "e-stiatorio.firebaseapp.com",
+    databaseURL: "https://e-stiatorio.firebaseio.com",
+    projectId: "e-stiatorio",
+    storageBucket: "",
+    messagingSenderId: "583488734892"
+  };
+  firebase.initializeApp(config);
+</script>
 <script type="text/javascript">
 	setTimeout(function(){
 		window.location="https://estiatorio.kapaweb.gr/app/index.html";
